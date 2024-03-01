@@ -1,0 +1,66 @@
+
+#input-form{
+z-index: 10;
+top: 50%;
+left: 50%;
+transform: translate(0,50% ) scale(0);
+transition: 500ms ease-in-out;
+
+}
+#input-form.active{
+    transform: translate(-50%,-50% ) scale(1); 
+    opacity: 1;
+}
+#overly{
+   
+    z-index: 8;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 50%);
+    position: fixed;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+   pointer-events: none;
+}
+#overly.active{
+    opacity: 1;
+    pointer-events: none;
+}
+
+
+
+
+#submit-form-btn{
+    border: 1px solid;
+    border-color: rgb(132, 132, 176);
+}
+#close-form-btn{
+    border: 1px solid;
+    border-color: rgb(132, 132, 176);
+}
+#sucsess-msg{
+    transform: scale(0);
+    transition-property: all;
+    transition-duration: 400ms;
+transition-timing-function: ease-in-out;
+
+}
+#sucsess-msg.active{
+    transform:scale(1);
+}
+
+.hidden{
+   display: none;
+}
+.check-btn{
+    width: 20px;
+    height: 20px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+.opacity{
+    opacity: 0.7;
+    text-decoration: line-through;
+}
+
